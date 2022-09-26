@@ -21,6 +21,7 @@
           const onChangeInput =(e) => {
               setValue(e.target.value);
           }
+          console.log('렌더링');
           const onSubmitForm = (e) => {
               e.preventDefault();
               if(parseInt(value) === first * second) {
