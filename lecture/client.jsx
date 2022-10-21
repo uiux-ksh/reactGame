@@ -1,8 +1,10 @@
 import React  from "react";
 import ReactDom from 'react-dom'
-import NumberBaseball from './NumberBaseball';
-//끝말잇기
-const WordRelay = require('./WordRelay');
+import NumberBaseball from './NumberBasball/NumberBaseball';
+import NumberBaseballHooks from "./NumberBasball/Hooks/NumberBaseballHooks";
 
 
-ReactDom.render(<NumberBaseball />, document.querySelector('#root'));
+
+
+
+ReactDom.render(<NumberBaseballHooks />, document.querySelector('#root'));
