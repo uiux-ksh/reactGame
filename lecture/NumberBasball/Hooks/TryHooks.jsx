@@ -1,5 +1,5 @@
-import React from "react";
-const TryHooks = ({tryInfo}) => {
+import React,{memo} from "react";
+const TryHooks = memo( ({tryInfo}) => {
     return(
         <li>
             <div>{tryInfo.try}</div>
@@ -7,6 +7,7 @@ const TryHooks = ({tryInfo}) => {
         </li>
     )
 
-};
+});
+TryHooks.displayName ='TryHooks';
 
 export default  TryHooks;
